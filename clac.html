@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="filescss/test.css">
+    <link rel="stylesheet" href="filescss/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <img src="images/24hourfitness.png" class="navbarimg">
+            <img src="images/search1.png" class="searchicon" onClick="search()">
+            <input type="checkbox" id="checkbox" class="check">
+            <label for="checkbox" style="cursor: pointer;" class="sidebartoggle">
+                <div class="spinner top"></div>
+                <div class="spinner middle"></div>
+                <div class="spinner bottom"></div>
+            </label>
+
+            <ul class="ullist">
+                <li><a href="index.html" class="a">HOME</a></li>
+                <li class="active"><a href="#" class="a about">ABOUT +</a>
+                    <div class="aboutlink">
+                        <div class="boxabout">
+                            <div class="contabout contabout1" style="border-bottom: 2px solid blue;">
+                                <a href="calculatebmi.html" class="Aboutlink-a" style="color: aqua;">BMI-CALCULATOR</a>
+                            </div>
+                            <div class="contabout contabout2" >
+                                <a href="clac.html" class="Aboutlink-a" style="color: aqua;">CALCULATOR</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="products.html"  class="a">PRODUCTS</a></li>
+                <li><a href="#" class="a">SERVICES</a></li>
+                <li><a href="login.html" class="a">LOGIN-IN</a></li>
+            </ul>
+
+            <input type="search" id="searchbar" placeholder="Search">
+        </nav>
+    </header>
+    <div class="container" style="width: 100%; height: 79vh;">
+        <div class="cont">
+            <div class="box">
+             <div class="calculator">
+             <table>
+                 <tr> <td colspan="4"><input type="text" class="textbox" placeholder="Calculate" id="text" name="textbox"></td></tr>
+                 <tr>
+                     <td><button class="button">All-clr</button></td>
+                     <td><button class="button">Clr</button></td>
+                     <td><button class="button">%</button></td>
+                     <td><button class="button">/</button></td>
+                 </tr>
+                 <tr>
+                    <td><button class="button">7</button></td>
+                    <td><button class="button">8</button></td>
+                    <td><button class="button">9</button></td>
+                    <td><button class="button">*</button></td>
+                 </tr>
+                 <tr>
+                    <td><button class="button">4</button></td>
+                    <td><button class="button">5</button></td>
+                    <td><button class="button">6</button></td>
+                    <td><button class="button">-</button></td>
+                 </tr>
+                 <tr>
+                    <td><button class="button">1</button></td>
+                    <td><button class="button">2</button></td>
+                    <td><button class="button">3</button></td>
+                    <td><button class="button">+</button></td>
+                 </tr>
+                 <tr>
+                    <td><button class="button">+-</button></td>
+                    <td><button class="button">0</button></td>
+                    <td><button class="button">.</button></td>
+                    <td><button class="button">=</button></td>
+                   
+                 </tr>
+
+            
+             </table>
+            </div>
+        </div>
+            </div>
+    </div>
+    <footer class="footer">
+      
+        <div class="p">surajFitness © 2022 fitness style</div>
+          
+        <div class="footerbox">
+            <a class="icon" href="https://www.instagram.com/suraj_6875/">
+            <ion-icon name="logo-instagram" style="color: white;"></ion-icon>
+            </a>
+            <a class="icon"href="https://www.facebook.com/profile.php?id=100004872768488"><ion-icon name="logo-facebook" style="color: white;"></ion-icon></a>
+        </div>
+    </footer>
+    <script src="jsfile/links.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

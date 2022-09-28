@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-y: scroll;
+}
+header{
+    z-index: 10000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbarimg{
+    width: 134px;
+    height: 46px;
+}
+.searchicon{
+    width: 23px;
+    height: 23px;
+    display: none;
+}
+.navbar{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+.ullist{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    position: relative;
+}
+.ullist a{
+    text-decoration: none;
+    color: white;
+}
+.ullist a:hover{
+    text-decoration: none;
+    color: rgb(180, 176, 176);
+}
+.ullist li{
+    list-style: none;
+   align-items: center;
+   transition: 0.1s ease;
+}
+#checkbox{
+    display: none;
+}
+.check:checked ~ .ullist{
+    left: 0%;
+}
+.spinner{
+    background-color: white;
+    width: 28px;
+    height: 4px;
+    margin-top: 4px;
+    margin-right: 12px;
+    transition: 0.3s ease;
+    display: none;
+}
+#checkbox:checked ~  .sidebartoggle > .spinner.middle{
+    opacity: 0;
+} 
+#checkbox:checked ~  .sidebartoggle > .spinner.top{
+    transform: rotate(140deg);
+    margin-top: 8px;
+}
+#checkbox:checked ~ .sidebartoggle > .spinner.bottom{
+    transform: rotate(-140deg);
+    margin-top: -11px;
+}
+#searchbar{
+    margin-right: 12px;
+    width: 165px;
+    padding: 9px;
+    border-radius: 5px;
+    display: block;
+}
+.topicons{
+    display: flex;
+}
+
+.aboutlink{
+    background-color:black;
+    color: white;
+    width: 145px;
+    text-align: center;
+    position: absolute;
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+    align-content: center;
+    display: none;
+}
+.boxabout{
+    display: grid;
+    place-content: center space-between;
+    gap: 1rem;
+}
+.contabout{
+    border-bottom: 2px solid blue;
+}
+.contabout1{
+    margin-top: 1rem;
+    
+}
+.contabout1:hover{
+    border-bottom: 1px solid blue;
+}
+.contabout2 a{
+     text-decoration: none;
+}
+.box{
+    position: absolute;
+}
+.Aboutlink-a{
+   font-size: 16px;
+   gap: 1rem;
+   margin-top: 16px;
+}
+.about:hover ~ .aboutlink{
+    display: block;
+}
+.aboutlink:hover{
+    display: block;
+   
+}
+.hero-img{
+    width: 256px;
+    height: 198px;
+    border: 9px  solid rgb(173, 87, 230);
+}
+ .active{
+    border-bottom: 2px solid blue;
+}
+.ullist li:hover{
+    border-bottom: 2px solid blue;
+}
+
+
+
+.marqueebox{
+    margin-top: 4px;
+    background-color: rgb(124, 124, 243);
+    color: white;
+}
+@media screen and (max-width: 765px){
+  .p{
+       font-size: 22px;
+  }
+}
+@media screen and (max-width: 812px){
+   .ullist
+   {
+        position: absolute;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        background-color: black;
+        width: 100%; 
+        flex-direction: column;
+        top: 44px;
+        left: -100%;
+        transition: 0.3s ease;
+        z-index: 999;
+       
+   } 
+   #checkbox:checked  ~ ullist{
+    left: 0%;
+}
+.spinner{
+    display: block;
+}
+#searchbar{
+    display: none;
+    position: absolute;
+    right: 78px;
+ }
+ .searchicon{
+     position: absolute;
+     display: block;
+     right: 55px;
+ }
+
+ .aboutlink{
+     position: initial;
+     border-bottom: 2px solid black;
+ }
+ .Aboutlink-a{
+     color: aqua;
+ }
+ .contabout{
+     border: none;
+ }
+ .ullist li:hover{
+    color: rgb(148, 145, 145);
+}
+.boxabout{
+    display: grid;
+    place-content: center space-between;
+    gap: 1rem;
+}
+.contabout1{
+    margin-top: 2rem;
+  
+}
+.contabout2{
+    margin-top: 1.4rem;
+    border-bottom: black;
+}
+
+}
+ @media screen and (max-width: 390px){
+    #searchbar{
+        width: 140px;
+    }
+
+ }
+ @media screen and (max-width: 364px){
+    #searchbar{
+        width: 120px;
+    }
+
+ }
+ @media screen and (max-width: 342px){
+    #searchbar{
+        width: 100px;
+    }
+
+ }
+ @media screen and (max-width: 320px){
+    #searchbar{
+        width: 95px;
+    }
+
+ }
+ @media screen and (max-width: 317px)
+{
+    #searchbar{
+        width: 85px;
+    }
+    
+}
+/* -----------------------------hero-section---------------- */
+
+.sections{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px auto;
+    gap: 2rem;
+    
+}
+.runningimg{
+    width: 227px;
+    height: 216px;
+    border: 6px  solid greenyellow;
+}
+.pushup-img{
+    width: 247px;
+    height: 216px;
+    border: 9px  solid rgb(106, 166, 245);
+}
+.squats-img{
+    width: 207px;
+    height: 206px;
+    border: 9px  solid rgb(234, 250, 87);
+}
+.plank-img{
+    width: 220px;
+    height: 196px;
+    border: 9px  solid rgb(157, 248, 192);
+}
+.pullup-img{
+    width: 190px;
+    height: 206px;
+    border: 9px  solid rgb(86, 111, 223);
+}
+.footer{
+    display: grid;
+    height: 12vh;
+    background-color: black;
+    color: white;
+    justify-items: center;
+    align-items: center;
+    font-size: 24px;
+}
+.unhealthyfood{
+    width: 210px;
+    height: 180px;
+}
+.iframemap{
+    justify-content: center;
+    overflow-y: auto;
+}
+@media screen and (max-width: 650px){
+     .sections{
+         display:  grid;
+         width: 90%;
+       justify-items: center;
+     }
+     .hero-content-text{
+         order: 1;
+     }
+     .hero-content-img{
+         order: 0;
+     }
+     .runningimg{
+         order: 1;
+     }
+     .content-2{
+         orphans: 0;
+     }
+    .content-3{
+        order: 0;
+    }
+    .content-4{
+        order: 0;
+    }
+    .squatsimg{
+        order: 1;
+    }
+    .pushupimg{
+        order: 1;
+    }
+    .content-5{
+        order: 0;
+    }
+    .planksimg{
+        order: 0;
+    }
+    .pullupimg{
+        order: 1;
+    }
+    .content-6{
+        order: 0;
+    }
+   .unhealthyfood1{
+       order: 1;
+   }
+   .healthyFood{
+       order: 1;
+   }
+    .runningimg{
+        width: 272px;
+        height: 216px;
+        border: 6px  solid greenyellow;
+    }
+    .pushup-img{
+        width: 277px;
+        height: 196px;
+        border: 9px  solid rgb(106, 166, 245);
+    }
+    .squats-img{
+        width: 267px;
+        height: 200px;
+        border: 9px  solid rgb(234, 250, 87);
+    }
+    .plank-img{
+        width: 270px;
+        height: 196px;
+        border: 9px  solid rgb(157, 248, 192);
+    }
+    .pullup-img{
+        width: 230px;
+        height: 246px;
+        border: 9px  solid rgb(86, 111, 223);
+    }
+}
+@media screen and (max-width: 324px)
+{
+    .runningimg{
+        width: 242px;
+        height: 216px;
+        border: 6px  solid greenyellow;
+    }
+    .pushup-img{
+        width: 247px;
+        height: 196px;
+        border: 9px  solid rgb(106, 166, 245);
+    }
+    .squats-img{
+        width: 237px;
+        height: 200px;
+        border: 9px  solid rgb(234, 250, 87);
+    }
+    .plank-img{
+        width: 230px;
+        height: 196px;
+        border: 9px  solid rgb(157, 248, 192);
+    }
+  
+}
+
+
+/* <!-- -----------------------------section-7--------------- --> */
+.burgerimg{
+    width: 290px;
+    height: 210px;
+    border: 9px  solid rgb(186, 102, 235);
+}
+
+/* <!-- -----------------------------section-8--------------- --> */
+
+.unhealthyfood{
+    width: 290px;
+    height: 199px;
+    border: 9px  solid rgb(83, 221, 83);
+}
+.healthyfood{
+    width: 287px;
+    height: 200px;
+    border: 9px  solid rgb(54, 56, 175);
+}
+.section-10{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 330px)
+{
+    .burgerimg{
+        width: 260px;
+        height: 210px;
+        border: 9px  solid rgb(186, 102, 235);
+    }
+    .unhealthyfood{
+        width: 260px;
+        height: 199px;
+        border: 9px  solid rgb(83, 221, 83);
+    }
+    .healthyfood{
+        width: 247px;
+        height: 200px;
+        border: 9px  solid rgb(54, 56, 175);
+    }
+}
+.icon{
+    text-decoration: none;
+    color: white;
+}

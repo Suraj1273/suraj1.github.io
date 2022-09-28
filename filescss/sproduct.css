@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cont1{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgsection:hover{
+    box-shadow: 3px 3px 3px black;
+}
+.parasection{
+    display: flex;
+}
+.parasection:hover{
+    box-shadow: 6px 6px 6px black;
+}
+.detial{
+    display: flex;
+    justify-content: center;
+}
+.detial:hover{
+    box-shadow: 6px 6px 6px black;
+}
+#btnadd{
+  margin-right: 43px;
+    width: 108px;
+    height: 38px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product details</title>
+  <style>
+      *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.cont1{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgsection:hover{
+    box-shadow: 3px 3px 3px black;
+}
+.parasection{
+    display: flex;
+}
+.parasection:hover{
+    box-shadow: 6px 6px 6px black;
+}
+.detial{
+    display: flex;
+    justify-content: center;
+}
+.detial:hover{
+    box-shadow: 6px 6px 6px black;
+}
+#btnadd{
+  margin-right: 43px;
+    width: 108px;
+    height: 38px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+@media screen and (max-width: 822px){
+   .cont1{
+       flex-direction: column;
+       gap: 2rem;
+   }
+    
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.para1{
+    display: flex;
+    align-items: center;
+}
+  </style>
+   
+</head>
+
+<body>
+    <div class="container dumbledetails1" style="height: 76vh; padding: 19px;">
+        <div class="cont1">
+            <div class="imgsection" style="background-color: rgb(194, 195, 197);">
+                <img src="images/dumble6img.jpg" alt="logo" class="dumble1img" width="260px">
+            </div>
+            
+            <div class="parasection" style="background-color: rgb(218, 230, 230); border-radius: 5px;">
+               
+                <div class="para1" >
+                    <table border="0" class="table" style="margin-right: 93px" cellspacing=10>
+                        <tr>
+                            <td colspan="2"><b>Product details</b></td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td>$80</td>
+                        </tr>
+                        <tr>
+                            <td>Brand</td>
+                            <td>Flexnest</td>
+                        </tr>
+                        <tr>
+                            <td>Color</td>
+                            <td>Black,yellow</td>
+                        </tr>
+                        <tr>
+                            <td>Item weight</td>
+                            <td>88 kilogram</td>
+                        </tr>
+                        <tr>
+                            <td>Material</td>
+                            <td>Iron,Rubber</td>
+                        </tr>
+                        <tr>
+                            <td>Product Dimensions</td>
+                            <td>56L X 30W centi.</td>
+                        </tr>
+                        <tr>
+                            <td>Style</td>
+                            <td>Adjustable</td>
+                        </tr>
+                    </table>
+                    </div>
+            </div>
+        </div>
+        <div class="detial cont1" style="background-color: rgb(205, 214, 214); border-radius: 10px; margin-top: 19px;">
+            <ul>
+                <li>Includes 1-Year JRNY Membership (Dollar 149 value; auto renews when trial ends unless cancelled 48 hours prior to trial end date)</li>
+                <li>5 - 52.5 lbs per Adjustable Dumbbell</li>
+                <li>Easy-to-Use Selection Dials</li>
+                <li>5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25, 30, 35, 40, 45, 50, and 52.5 lb.</li>
+                <li>Functional, full-body strength for your legs, back, chest, abs, shoulders and arms</li>
+                <li>Dimensions: 16.9" L x 8.3" W x 9" H (43 x 21.2 x 22.8 cm)</li>
+            </ul>
+            <button id="btnadd">Add to cart</button>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

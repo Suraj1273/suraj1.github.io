@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+   background-color: whitesmoke;
+    
+}
+.cont1{
+    width: 100%;
+    margin: 10px auto;
+}
+.list{
+    margin-left: 53px;
+    margin-top: 9px;
+}
+.bmibox{
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    gap: 1rem;
+}
+
+.text{
+    width: 143px;
+    height: 24px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px;
+}
+input[type=text]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0px 0px 8px 0px dodgerblue;
+}
+.text-bmi{
+    width: 83px;
+    height: 24px;
+    border-radius: 5px;
+}
+.bmicontentbox{
+    width: 100%;
+    background-color: aqua;
+    margin: 12px 44px;
+    border: 15px solid dodgerblue;
+    border-radius: 10px;
+}
+.btn{
+    width: 103px;
+    height: 39px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+}
+.form{
+   padding: 49px 9px 49px 9px;
+}
+.bmipara{
+    width: 34%;
+    margin: 0px 24px;
+    background-color: rgb(76, 163, 235);
+    padding: 99px 29px 99px 29px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 777px){
+    .bmibox{
+        flex-direction: column;
+        margin: 23px auto;
+        width: 90%;   
+    }
+    .bmipara{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 427px){
+    .btn2{
+        margin-top: 8px;
+    }
+}
+.bmi{
+    width: 80%;
+    margin: 22px auto;
+}
+table tr{
+    background-color: aqua;
+}
+table tr:hover{
+    background-color: black;
+    color: white;
+}

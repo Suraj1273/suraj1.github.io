@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.herosection{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+.sectionhero{
+    margin-top: 22px;
+}
+.container2{
+    width: 96%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.product1content{
+    background-image: linear-gradient(to left, #d16ba5, #bb7bbd, #a18acb, #8a96d0, #7ba0cc, #75aad1, #73b4d3, #74bdd4, #6ccde0, #63dce9, #5eecef, #5ffbf1);
+    border-radius: 15px;
+}
+.content1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content1 > ul{
+    display: flex;
+    gap: 0.3rem;
+}
+.content1 > ul  li{
+    list-style: none;
+}
+.product-btn{
+    width: 98px;
+    height: 37px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(235, 21, 21);
+    color: white;
+    cursor: pointer;
+}
+.product-btn:hover{
+    background-color: rgb(224, 95, 95);
+}
+.cart-btn{
+    width: 78px;
+    height: 37px;
+    border: none;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+.cart-btn:hover{
+    background-color: rgb(142, 80, 199);
+}
+.buy-btn{
+    width: 78px;
+    height: 37px;
+    margin-top: -17px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(37, 47, 187);
+    color: white;
+    cursor: pointer;
+}
+.buy-btn:hover{
+    background-color: rgb(64, 72, 190);
+}
+.star{
+    font-size: 23px;
+    color: yellow;
+    cursor: pointer;
+}
+.ratebtn{
+    width: 79px;
+    height: 32px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.orange{
+    color: orange;
+}
+.yellow{
+    color: yellow;
+}
+.dumbleimg1{
+    width: 180px; 
+}
+
+
+@media screen and (max-width: 945px){
+    .container2{
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+ 
+    }
+}
+@media screen and (max-width: 585px){
+   .dumbleimg1{
+        width: 290px; 
+       
+    }
+
+}
+@media screen and (max-width: 852px){
+    .container2{
+        justify-content: space-around;
+        padding: 0px 15px;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 610px){
+    .herosection{
+        flex-direction: column;
+    }
+}
